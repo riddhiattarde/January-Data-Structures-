@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, j;
+
+    // Input the value of n
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printf("\nMultiplication Table from 1 to %d:\n\n", n);
+
+    // Print column headers
+    for (i = 1; i <= n; i++) {
+        printf("%4d", i);
+    }
+    printf("\n");
+
+    // Print the multiplication table vertically
+    for (i = 1; i <= 10; i++) {
+        for (j = 1; j <= n; j++) {
+            printf("%4d", i * j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
